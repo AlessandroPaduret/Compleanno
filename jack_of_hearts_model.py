@@ -369,7 +369,7 @@ if __name__ == "__main__":
         # Ogni giocatore fa un guess casuale (logica di esempio)
         for player in game.players:
             visible = game.get_visible_suits_for(player.name)
-            #print(f"  {player.name} vede: {', '.join(f'{n}: {s.value}' for n, s in visible.items())}")
+            print(f"  {player.name} vede: {', '.join(f'{n}: {s.value}' for n, s in visible.items())}")
             guess = random.choice(list(Suit))
             # Il Jack conosce il suo seme
             if player.is_jack:
